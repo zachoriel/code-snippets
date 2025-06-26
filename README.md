@@ -8,10 +8,14 @@
 - [ArenaLog.Log – Custom Structured Logging with Severity and Formatting](#-arenaloglog--custom-structured-logging-with-severity-and-formatting)
 - [ArenaMonitor.PrintSummary – Memory Diagnostics and Alignment Analysis](#-arenamonitorprintsummary--memory-diagnostics-and-alignment-analysis)
 
-### Ruby Snippets *(coming soon!)*
-- *TBD*
+### Ruby Snippets
+- [FriendsController#create – User-Scoped Resource Creation with Feedback](#-friendscontrollercreate--user-scoped-resource-creation-with-feedback)
+- [SearchController#index – Hybrid Routing and Fuzzy Record Lookup](#-searchcontrollerindex--hybrid-routing-and-fuzzy-record-lookup)
+- [_friend_row.html.erb – Conditional Ownership Rendering with Smart Actions](#-_friend_rowhtmlerb--conditional-ownership-rendering-with-smart-actions)
+- [_header.html.erb – Responsive Navbar with Authentication-Aware Logic](#-_headerhtmlerb--responsive-navbar-with-authentication-aware-logic)
+- [show.html.erb – Friend Detail View with Clear UX and Safe Actions](#-showhtmlerb--friend-detail-view-with-clear-ux-and-safe-actions)
 
-## Code Snippets
+## Code Snippets — C#
 
 ### 📌 `ArenaAllocator.Allocate` – Manual Allocation with Alignment and Logging
 
@@ -92,3 +96,67 @@ Generates a formatted summary of all recorded memory allocations across live are
 > *Skills demonstrated:* runtime analytics, memory instrumentation, log formatting, and tooling to support performance-critical systems.
 
 ![PrintSummary](https://github.com/user-attachments/assets/3d06cfaf-fe47-4ca5-88d2-41e67858f58a)
+
+## Code Snippets — Ruby/ERB
+
+### 📌 `FriendsController#create` – User-Scoped Resource Creation with Feedback
+
+This method builds a new `Friend` entry scoped to the currently authenticated user and provides dynamic feedback on success or failure:
+
+- **Ownership binding** via `current_user.friends.build`
+- **User-friendly flash messaging** personalized with the friend’s name
+- **Graceful fallback rendering** for validation errors
+
+> *Skills demonstrated:* user-scoped resource creation, form feedback patterns, conditional response handling
+
+![FriendsControllerCreate](https://github.com/user-attachments/assets/c79a5608-91bb-4d08-a312-408d3b3d48ca)
+
+### 📌 `SearchController#index` – Hybrid Routing and Fuzzy Record Lookup
+
+This method performs dynamic routing or database search depending on user input, supporting both exact and partial matches:
+
+- **Natural-language page redirects** for terms like "home", "about", or "friends list"
+- **Exact match lookup** via `LOWER(first_name || ' ' || last_name)`
+- **Fallback fuzzy matching** using SQL `LIKE` queries on `first_name` and `last_name`
+
+> *Skills demonstrated:* user-centric UX, conditional logic, SQL query tuning, graceful fallback design
+
+![SearchControllerLogic](https://github.com/user-attachments/assets/d5a05614-a4c3-4ec4-8696-b6dfe3e9e769)
+
+### 📌 `_friend_row.html.erb` – Conditional Ownership Rendering with Smart Actions
+
+This partial renders a friend entry only if it belongs to the current user and includes inline controls with confirmation prompts:
+
+- **Authorization check** ensures only owned resources are rendered
+- **Inline action buttons** with scoped styles for editing and deletion
+- **Destructive action guard** using `data-confirm` and Stimulus controller
+
+> *Skills demonstrated:* conditional view logic, UX-aware button controls, secure resource visibility
+
+![FriendRowDisplay](https://github.com/user-attachments/assets/c75440f9-4bcd-43cf-b86c-3021cb31ac00)
+
+### 📌 `_header.html.erb` – Responsive Navbar with Authentication-Aware Logic
+
+This responsive header partial adapts its content based on the user's login state and highlights the current page:
+
+- **Contextual rendering** of nav options for signed-in vs. guest users
+- **Active path highlighting** via `current_page?` for navigation clarity
+- **Secure sign-out** using Turbo’s `data-method="delete"`
+
+> *Skills demonstrated:* responsive layout logic, dynamic route-based styling, authentication-aware UI
+
+![DynamicNavBar](https://github.com/user-attachments/assets/60709271-611a-4109-91ae-f5d4eb7e05bf)
+
+### 📌 `show.html.erb` – Friend Detail View with Clear UX and Safe Actions
+
+This view presents a single friend's information in a visually distinct card-style layout with built-in editing and deletion controls:
+
+- **Visually structured layout** using Bootstrap utilities for padding, spacing, and typography
+- **Readable metadata** such as creation timestamp and name headers
+- **Partial rendering hook** (`render @friend`) for modular presentation
+- **Top navigation buttons** with consistent min-widths for layout harmony
+- **Destructive action guard** via Stimulus controller integration on the delete button
+
+> *Skills demonstrated:* responsive view design, partial reuse, user-friendly actions, accessibility-conscious button layout
+
+![FriendDisplay](https://github.com/user-attachments/assets/5271f2d5-34fb-41e6-a4aa-ce5c76af5b83)
