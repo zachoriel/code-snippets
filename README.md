@@ -14,6 +14,8 @@ Thanks for checking out my code! 🙂
 - [ArenaLog.Log – Custom Structured Logging with Severity and Formatting](#-arenaloglog--custom-structured-logging-with-severity-and-formatting)
 - [ArenaMonitor.PrintSummary – Memory Diagnostics and Alignment Analysis](#-arenamonitorprintsummary--memory-diagnostics-and-alignment-analysis)
 
+---
+
 ### Ruby Snippets
 - [FriendsController#create – User-Scoped Resource Creation with Feedback](#-friendscontrollercreate--user-scoped-resource-creation-with-feedback)
 - [SearchController#index – Hybrid Routing and Fuzzy Record Lookup](#-searchcontrollerindex--hybrid-routing-and-fuzzy-record-lookup)
