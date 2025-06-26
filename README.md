@@ -1,3 +1,9 @@
+# Overview
+
+Hi there! This is a centralized location for me to show code samples, primarily for the purposes of job applications. I also have four years worth of TypeScript, JavaScript, and Python code, but I can't show them as they're part of a proprietary codebase. However, I'm more than happy to discuss the work I've done in those stacks.
+
+Thanks for checking out my code! 🙂
+
 ## Table of Contents
 
 ### C# Snippets
