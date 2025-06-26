@@ -1,12 +1,12 @@
 ## Table of Contents
 
 ### C# Snippets
-- [ArenaAllocator.Allocate – Manual Allocation with Alignment and Logging](#arenaallocatorallocate--manual-allocation-with-alignment-and-logging)
-- [ArenaUtil.GetNextPowerOfTwo – Fast Power-of-Two Round-Up Utility](#arenautilgetnextpoweroftwo--fast-power-of-two-round-up-utility)
-- [ArenaArray<T> Constructor – Type-Safe Unmanaged Array Allocation](#arenaarrayt-constructor--type-safe-unmanaged-array-allocation)
-- [Benchmark Cycle Loop – Allocation, GC Profiling, and Logging](#benchmark-cycle-loop--allocation-gc-profiling-and-logging)
-- [ArenaLog.Log – Custom Structured Logging with Severity and Formatting](#arenaloglog--custom-structured-logging-with-severity-and-formatting)
-- [ArenaMonitor.PrintSummary – Memory Diagnostics and Alignment Analysis](#arenamonitorprintsummary--memory-diagnostics-and-alignment-analysis)
+- [ArenaAllocator.Allocate – Manual Allocation with Alignment and Logging](#-arenaallocatorallocate--manual-allocation-with-alignment-and-logging)
+- [ArenaUtil.GetNextPowerOfTwo – Fast Power-of-Two Round-Up Utility](#-arenautilgetnextpoweroftwo--fast-power-of-two-round-up-utility)
+- [ArenaArray<T> Constructor – Type-Safe Unmanaged Array Allocation](#-arenaarrayt-constructor--type-safe-unmanaged-array-allocation)
+- [Benchmark Cycle Loop – Allocation, GC Profiling, and Logging](#-benchmark-cycle-loop--allocation-gc-profiling-and-logging)
+- [ArenaLog.Log – Custom Structured Logging with Severity and Formatting](#-arenaloglog--custom-structured-logging-with-severity-and-formatting)
+- [ArenaMonitor.PrintSummary – Memory Diagnostics and Alignment Analysis](#-arenamonitorprintsummary--memory-diagnostics-and-alignment-analysis)
 
 ### Ruby Snippets *(coming soon!)*
 - *TBD*
